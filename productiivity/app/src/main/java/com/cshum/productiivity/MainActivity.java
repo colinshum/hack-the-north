@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
+import android.os.Vibrator;
 public class MainActivity extends AppCompatActivity {
     public TextView label;
 
@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     public MediaPlayer media;
     public int git = R.raw.git;
     public int rah = R.raw.rah;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC),
                 AudioManager.FLAG_SHOW_UI);
     }
+
 
     public void gitStart() {
         media = MediaPlayer.create(this, git);
