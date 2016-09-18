@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:text="Enter Minutes"
         android:id="@+id/labelTxt"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
